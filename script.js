@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const listaFakteve = document.getElementById("lista-fakteve");
+  const listaFakteve = document.getElementById("lista");
 
   // Merr fakte për mace dhe i shfaq
   fetch("https://catfact.ninja/facts")
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   // Merr dhe shfaq detajet e faktit
-  const detajiFaktit = document.getElementById("detaji-faktit");
+  const detajiFaktit = document.getElementById("detajet");
   const faktId = location.hash.substring(1);
   if (faktId) {
     fetch(`https://catfact.ninja/fact/${faktId}`)
